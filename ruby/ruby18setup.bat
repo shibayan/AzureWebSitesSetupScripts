@@ -6,7 +6,7 @@ mkdir bin
 cd bin
 
 curl -L -O http://dl.bintray.com/oneclick/rubyinstaller/ruby-1.8.7-p374-i386-mingw32.7z
-7za x ruby-1.8.7-p374-i386-mingw32.7z
+7za x ruby-1.8.7-p374-i386-mingw32.7z > nul
 
 rm -f ruby-1.8.7-p374-i386-mingw32.7z
 
@@ -19,7 +19,7 @@ mkdir devkit
 cd devkit
 
 curl -L -O https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe
-7za x DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe
+7za x DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe > nul
 
 rm -f DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe
 

@@ -6,7 +6,7 @@ mkdir bin
 cd bin
 
 curl -L -O http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.3-x64-mingw32.7z
-7za x ruby-2.1.3-x64-mingw32.7z
+7za x ruby-2.1.3-x64-mingw32.7z > nul
 
 rm -f ruby-2.1.3-x64-mingw32.7z
 
@@ -19,7 +19,7 @@ mkdir devkit
 cd devkit
 
 curl -L -O http://cdn.rubyinstaller.org/archives/devkits/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe
-7za x DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe
+7za x DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe > nul
 
 rm -f DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe
 
