@@ -1,5 +1,7 @@
 set PATH=%PATH%;D:\7zip
 
+cd D:\home\site\wwwroot
+
 mkdir bin
 cd bin
 
