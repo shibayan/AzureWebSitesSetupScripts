@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External Runtime Installer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>External Runtime Installer</h1>
+            <p class="lead">Runtime Installer for Azure Web Sites.</p>
+        </div>
+        <!-- ko foreach: runtimes -->
+        <h3 data-bind="text: name"></h3>
+        <div class="row" data-bind="foreach: versions">
+            <div class="col-md-4">
+                <h4 data-bind="text: version"></h4>
+                <!-- ko if: $root.isInstalling -->
+                <button type="button" class="btn btn-primary" disabled="disabled">Installing..</button>
+                <!-- /ko -->
+                <!-- ko ifnot: $root.isInstalling -->
+                <button type="button" class="btn btn-primary" data-bind="click: $root.doInstall">Install</button>
+                <!-- /ko -->
+            </div>
+        </div>
+        <!-- /ko -->
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/bootstrap.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js"></script>
+    <script>
+        var viewModel = {
+            runtimes: ko.observableArray(),
+            isInstalling: ko.observable(false),
+            doInstall: function (data) {
+                var param = { command: "cd /d %TEMP% & curl -o install.bat " + data.path + " & install.bat" };
+
+                viewModel.isInstalling(true);
+
+                $.ajax({ type: "POST", url: "/api/command", data: JSON.stringify(param), contentType: "application/json", timeout: 300000 }).done(function (result) { alert("success"); viewModel.isInstalling(false); }).fail(function (xhr) { alert("error"); viewModel.isInstalling(false); });
+            }
+        };
+
+        ko.applyBindings(viewModel);
+
+        function runtimeLoaded(data) {
+            viewModel.runtimes(data);
+        }
+    </script>
+    <script src="https://rawgit.com/shibayan/AzureWebSitesSetupScripts/master/runtimes.js"></script>
+</body>
+</html>
