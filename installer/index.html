@@ -33,7 +33,7 @@
             runtimes: ko.observableArray(),
             isInstalling: ko.observable(false),
             doInstall: function (data) {
-                var param = { command: "cd /d %TEMP% & curl -o install.bat " + data.path + " & install.bat" };
+                var param = { command: "cd /d %TEMP% & curl -o install.bat " + data.scriptPath + " & install.bat" };
 
                 viewModel.isInstalling(true);
 
