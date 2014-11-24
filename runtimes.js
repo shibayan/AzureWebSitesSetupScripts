@@ -8,8 +8,8 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/go/1.3.3.bat",
                 "appSettings":
                 {
-                    "GOROOT": "D:\home\site\wwwroot\bin\go\1.3.3",
-                    "GOPATH": "D:\home\go"
+                    "GOROOT": "D:\\home\\site\\wwwroot\\bin\\go\\1.3.3",
+                    "GOPATH": "D:\\home\\go"
                 }
             },
             {
@@ -17,8 +17,8 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/go/1.3.3_x64.bat",
                 "appSettings":
                 {
-                    "GOROOT": "D:\home\site\wwwroot\bin\go\1.3.3",
-                    "GOPATH": "D:\home\go"
+                    "GOROOT": "D:\\home\\site\\wwwroot\\bin\\go\\1.3.3",
+                    "GOPATH": "D:\\home\\go"
                 }
             }
         ]
@@ -31,7 +31,7 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/perl/5.14.4.bat",
                 "appSettings":
                 {
-                    "PERL_HOME": "D:\home\site\wwwroot\bin\perl\5.14.4",
+                    "PERL_HOME": "D:\\home\\site\\wwwroot\\bin\\perl\\5.14.4",
                 }
             },
             {
@@ -39,7 +39,7 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/perl/5.16.3.bat",
                 "appSettings":
                 {
-                    "PERL_HOME": "D:\home\site\wwwroot\bin\perl\5.16.3",
+                    "PERL_HOME": "D:\\home\\site\\wwwroot\\bin\\perl\\5.16.3",
                 }
             },
             {
@@ -47,7 +47,7 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/perl/5.18.4.bat",
                 "appSettings":
                 {
-                    "PERL_HOME": "D:\home\site\wwwroot\bin\perl\5.18.4",
+                    "PERL_HOME": "D:\\home\\site\\wwwroot\\bin\\perl\\5.18.4",
                 }
             },
             {
@@ -55,7 +55,7 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/perl/5.20.1.bat",
                 "appSettings":
                 {
-                    "PERL_HOME": "D:\home\site\wwwroot\bin\perl\5.20.1",
+                    "PERL_HOME": "D:\\home\\site\\wwwroot\\bin\\perl\\5.20.1",
                 }
             }
         ]
@@ -68,7 +68,7 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/ruby/1.8.3.bat",
                 "appSettings":
                 {
-                    "RUBY_HOME": "D:\home\site\wwwroot\bin\ruby\1.8.3",
+                    "RUBY_HOME": "D:\\home\\site\\wwwroot\\bin\\ruby\\1.8.3",
                 }
             },
             {
@@ -76,7 +76,7 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/ruby/1.9.3.bat",
                 "appSettings":
                 {
-                    "RUBY_HOME": "D:\home\site\wwwroot\bin\ruby\1.9.3",
+                    "RUBY_HOME": "D:\\home\\site\\wwwroot\\bin\\ruby\\1.9.3",
                 }
             },
             {
@@ -84,7 +84,7 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/ruby/2.0.0.bat",
                 "appSettings":
                 {
-                    "RUBY_HOME": "D:\home\site\wwwroot\bin\ruby\2.0.0",
+                    "RUBY_HOME": "D:\\home\\site\\wwwroot\\bin\\ruby\\2.0.0",
                 }
             },
             {
@@ -92,7 +92,7 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/ruby/2.0.0_x64.bat",
                 "appSettings":
                 {
-                    "RUBY_HOME": "D:\home\site\wwwroot\bin\ruby\2.0.0",
+                    "RUBY_HOME": "D:\\home\\site\\wwwroot\\bin\\ruby\\2.0.0",
                 }
             },
             {
@@ -100,7 +100,7 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/ruby/2.1.3.bat",
                 "appSettings":
                 {
-                    "RUBY_HOME": "D:\home\site\wwwroot\bin\ruby\2.1.3",
+                    "RUBY_HOME": "D:\\home\\site\\wwwroot\\bin\\ruby\\2.1.3",
                 }
             },
             {
@@ -108,7 +108,7 @@ var runtimes =
                 "scriptPath": "https://raw.githubusercontent.com/shibayan/AzureWebSitesSetupScripts/master/ruby/2.1.3_x64.bat",
                 "appSettings":
                 {
-                    "RUBY_HOME": "D:\home\site\wwwroot\bin\ruby\2.1.3",
+                    "RUBY_HOME": "D:\\home\\site\\wwwroot\\bin\\ruby\\2.1.3",
                 }
             }
         ]
